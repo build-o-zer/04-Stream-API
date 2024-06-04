@@ -1,18 +1,16 @@
 package org.buildozers;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.List;
-import java.util.Map;
-
+import lombok.extern.slf4j.Slf4j;
 import org.buildozers.streamapidojo.kata_03.Kata03;
 import org.buildozers.streamapidojo.kata_03.Person;
 import org.buildozers.streamapidojo.kata_03.Transaction;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
+import java.util.Map;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * /!\ DO NOT MODIFY THIS CLASS /!\ 

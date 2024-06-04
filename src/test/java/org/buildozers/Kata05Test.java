@@ -1,18 +1,17 @@
 package org.buildozers;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.buildozers.streamapidojo.kata_05.AliveSuperHero;
 import org.buildozers.streamapidojo.kata_05.DeadSuperHero;
 import org.buildozers.streamapidojo.kata_05.Kata05;
 import org.buildozers.streamapidojo.kata_05.Team;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * /!\ DO NOT MODIFY THIS CLASS /!\ 

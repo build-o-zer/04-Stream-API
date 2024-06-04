@@ -20,7 +20,7 @@ public class Kata05 {
      * @return
      */
 
-    public static Map<Team, Integer> getNumberAvailableFighter(List<Team> team) {
+    public static Map<Team, Integer> getNumberAvailableFighters(List<Team> team) {
         Map<Team, Integer> availableFightersPerTeam = new HashMap<>();
         for (Team t : team) {
             int count = 0;

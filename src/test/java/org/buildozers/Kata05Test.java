@@ -45,7 +45,7 @@ class Kata05Test {
         List<Team> teams = List.of(justiceLeague, avengers);    
 
         // when
-        Map <Team, Integer> result = Kata05.getNumberAvailableFighter(teams);
+        Map <Team, Integer> result = Kata05.getNumberAvailableFighters(teams);
 
         // Then
         assertThat(result)

@@ -8,6 +8,7 @@ import org.buildozers.streamapidojo.kata_04.Kata04;
 import org.buildozers.streamapidojo.kata_04.Person;
 import org.buildozers.streamapidojo.kata_04.Person.Genre;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import lombok.extern.slf4j.Slf4j;

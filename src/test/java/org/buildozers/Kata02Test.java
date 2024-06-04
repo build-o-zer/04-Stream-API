@@ -7,6 +7,7 @@ import java.util.List;
 import org.buildozers.streamapidojo.kata_02.Kata02;
 import org.buildozers.streamapidojo.kata_02.Transaction;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import lombok.extern.slf4j.Slf4j;

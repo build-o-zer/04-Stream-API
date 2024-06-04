@@ -9,6 +9,7 @@ import org.buildozers.streamapidojo.kata_03.Kata03;
 import org.buildozers.streamapidojo.kata_03.Person;
 import org.buildozers.streamapidojo.kata_03.Transaction;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import lombok.extern.slf4j.Slf4j;
@@ -50,8 +51,7 @@ class Kata03Test {
      * /!\ DO NOT MODIFY THIS METHOD /!\ 
      * ---------------------------------
      * Build a list of transaction related to the person list
-     * 
-     * @param persons list of persons
+     *
      * @return list of transactions related to the given persons
      */
     private static List<Transaction> buildListOfTransactions() {

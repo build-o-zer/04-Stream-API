@@ -11,6 +11,7 @@ import org.buildozers.streamapidojo.kata_05.DeadSuperHero;
 import org.buildozers.streamapidojo.kata_05.Kata05;
 import org.buildozers.streamapidojo.kata_05.Team;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 /**

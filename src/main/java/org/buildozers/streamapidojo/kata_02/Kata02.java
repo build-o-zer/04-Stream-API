@@ -8,20 +8,16 @@ import lombok.experimental.UtilityClass;
 public class Kata02 {
 
     /**
-     * KATA: Refactor this method to use Java Stream API.
+     * returns the sum of all transaction values, but only for transactions with a value greater than 1000.
      * 
      * @param transactions Array of transactions
      * @return sum of all transaction values
      */
     public static int getSumOfAllTransactionValues(List<Transaction> transactions) {
-        int sum = 0;
-        for (Transaction transaction : transactions) {
-            if (transaction.getValue() > 1000) 
-            { 
-                sum += transaction.getValue();
-            }
-        }
-        return sum;
+        return transactions.stream()
+            .mapToInt(Transaction::getValue)
+            .filter(value -> value > 1000)            
+            .sum();
     }   
     
 }

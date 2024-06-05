@@ -1,8 +1,8 @@
 package org.buildozers.streamapidojo.kata_03;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import lombok.experimental.UtilityClass;
 
@@ -10,8 +10,6 @@ import lombok.experimental.UtilityClass;
 public class Kata03 {
 
     /**
-     * KATA: Refactor this method to use Java Stream API.
-     * 
      * Calculate the total amount of transactions for each person in the list of transactions.
      * Then return a map where the key is the person and the value is the total amount of transactions.
      * 
@@ -20,15 +18,8 @@ public class Kata03 {
      */
 
     public static Map<Person, Long> calculateTotalTransactionAmount(List<Transaction> transactions) {
-        Map<Person, Long> totalAmounts = new HashMap<>();
-
-        for (Transaction transaction : transactions) {
-            Person person = transaction.getPerson();
-            long amount = transaction.getAmount();
-            totalAmounts.put(person, totalAmounts.getOrDefault(person, 0L) + amount);
-        }
-
-        return totalAmounts;
+        return transactions.stream()
+            .collect(Collectors.groupingBy(Transaction::getPerson, Collectors.summingLong(Transaction::getAmount)));
     }
     
 }
